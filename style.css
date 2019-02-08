@@ -68,6 +68,7 @@ background-color: rgb(241, 186, 67);
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: row-reverse;
 }
 aside img {
     height:40%;
