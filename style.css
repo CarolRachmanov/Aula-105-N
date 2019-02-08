@@ -8,10 +8,12 @@ body {
                         'section section aside aside'
                         'footer footer footer footer';
     grid-template-rows: 200px 60px 800px 110px;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    /* Todas as colunas com o mesmo tamanho, 1/4 da tela */
 }
 header {
 grid-area: header;
-background-color:rgb(84, 219, 179);
+background-color:rgb(89, 228, 186);
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -23,7 +25,7 @@ header img {
 }
 header h1 {
     font-size: 60pt;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Gloria Hallelujah', cursive;
 
 }
@@ -36,7 +38,7 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color:white;
+    color:rgb(255, 186, 36);
     font-size: 20pt;
     font-family: 'Patua One', cursive;
 }
@@ -47,10 +49,34 @@ nav a:hover {
 section {
 grid-area: section;
 background-color: rgb(187, 53, 82);
+display:flex;
+justify-content: center;
+align-items: center;
+}
+ section p {
+    font-size: 20pt;
+    color: white;
+    font-family: 'Patua One', cursive;
+}
+section img {
+    height: 40%;
+    width:auto;
 }
 aside {
 grid-area: aside;
 background-color: rgb(241, 186, 67);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+aside img {
+    height:40%;
+    width:auto;
+}
+aside p{
+    font-size: 20pt;
+    color: white;
+    font-family: 'Patua One', cursive;
 }
 footer {
 grid-area: footer;
